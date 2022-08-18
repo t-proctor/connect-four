@@ -1,0 +1,10 @@
+type Game @entity {
+  id: ID!
+  betAmount: BigInt! # uint256
+  player1: Bytes! # address
+  player2: Bytes! # address
+  status: String! #game status
+  moves: [Int!]! # array of board indexes
+  nextPlayer: Bytes! # address
+  winner: Bytes! # address
+}
